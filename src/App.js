@@ -8,6 +8,7 @@ import { yup } from "./config";
 import { setLocale } from "yup";
 import { useEffect } from "react";
 import { FormContact } from "./components";
+import { PracticeFormContact } from "./components/ui/PracticeFormContact";
 
 export const App = () => {
   useEffect(() => {
@@ -21,7 +22,8 @@ export const App = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Router />
-        <FormContact />
+        {/*<FormContact />*/}
+        <PracticeFormContact />
       </ThemeProvider>
     </BrowserRouter>
   );
