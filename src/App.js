@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { setGlobal } from "reactn";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./router";
@@ -6,8 +7,7 @@ import { theme } from "./styles";
 import { GlobalStyles } from "./styles/themes/GlobalStyle";
 import { yup } from "./config";
 import { setLocale } from "yup";
-import { useEffect } from "react";
-import { FormContact } from "./components";
+import { FormPractice } from "./components/ui";
 
 export const App = () => {
   useEffect(() => {
@@ -21,7 +21,8 @@ export const App = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Router />
-        <FormContact />
+        {/*<FormContact />*/}
+        <FormPractice />
       </ThemeProvider>
     </BrowserRouter>
   );

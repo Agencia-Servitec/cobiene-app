@@ -26,3 +26,4 @@ export * from "./SocialLink";
 export * from "./NavigateGoToLink";
 export * from "./Title";
 export * from "./Text";
+export * from "./FormPractice";
